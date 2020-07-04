@@ -11,6 +11,13 @@
       "url": "https://github.com/pallavkothari/heroku-buildpack-nginx"
     }
   ],
+  "env": {
+    "VAULT_UNSEAL_KEY": {
+      "description": "Vault unseal key",
+      "required": false,
+      "value": "to-be-overriden"
+    }
+  },
   "addons": [
     {
       "plan": "heroku-postgresql:hobby-dev",
