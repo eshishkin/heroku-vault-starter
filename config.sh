@@ -4,6 +4,8 @@ set -e
 
 cat << EOF
 
+disable_mlock = true
+
 storage "postgresql" {
   connection_url = "${DATABASE_URL:?}"
 }
