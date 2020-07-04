@@ -6,6 +6,9 @@
   "buildpacks": [
     {
       "url": "https://github.com/eshishkin/heroku-buildpack-vault.git"
+    },
+    {
+      "url": "https://github.com/pallavkothari/heroku-buildpack-nginx"
     }
   ],
   "addons": [
