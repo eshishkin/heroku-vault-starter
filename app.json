@@ -1,0 +1,29 @@
+{
+  "name": "Vault Server",
+  "description": "Deploy a Vault server to Heroku",
+  "repository": "https://github.com/eshishkin/heroku-vault-starter",
+  "keywords": ["vault"],
+  "buildpacks": [
+    {
+      "url": "https://github.com/eshishkin/heroku-buildpack-vault.git"
+    }
+  ],
+  "addons": [
+    {
+      "plan": "heroku-postgresql:hobby-dev",
+      "as": "database",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "scripts": {
+    "postdeploy": "psql ${DATABASE_URL} -q -f vault_kv_storage_table.sql"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
