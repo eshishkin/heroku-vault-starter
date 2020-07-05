@@ -32,5 +32,5 @@ do
     fi
     echo -n "."
   fi
-  sleep 1
+  sleep ${UNSEALING_RETRY_INTERVAL}
 done

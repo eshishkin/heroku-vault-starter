@@ -16,6 +16,11 @@
       "description": "Vault unseal key",
       "required": false,
       "value": "to-be-overriden"
+    },
+    "UNSEALING_RETRY_INTERVAL": {
+      "description": "Time between retries in seconds",
+      "required": true,
+      "value": "1"
     }
   },
   "addons": [
