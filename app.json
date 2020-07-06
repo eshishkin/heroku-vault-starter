@@ -21,6 +21,11 @@
       "description": "Time between retries in seconds",
       "required": true,
       "value": "1"
+    },
+    "ENABLE_UI": {
+      "description": "Should Vault UI be enabled",
+      "required": true,
+      "value": "false"
     }
   },
   "addons": [

@@ -4,6 +4,8 @@ set -e
 
 cat << EOF
 
+ui = ${ENABLE_UI}
+
 disable_mlock = true
 
 storage "postgresql" {
