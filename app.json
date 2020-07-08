@@ -17,11 +17,6 @@
       "required": false,
       "value": "to-be-overriden"
     },
-    "UNSEALING_RETRY_INTERVAL": {
-      "description": "Time between retries in seconds",
-      "required": true,
-      "value": "1"
-    },
     "ENABLE_UI": {
       "description": "Should Vault UI be enabled",
       "required": true,
