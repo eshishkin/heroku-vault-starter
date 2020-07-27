@@ -17,7 +17,7 @@ it is based on cloud KMS. See https://learn.hashicorp.com/vault/day-one/ops-auto
 
 How to use it 
 
-- Use [this](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Feshishkin%2Fheroku-vault-starter%2Ftree%2Fmaster) or a button above to install
+- Use [this link](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Feshishkin%2Fheroku-vault-starter%2Ftree%2Fmaster) or a button above to install
 Vault on Heroku server (it uses free plan by default)
 - When Vault is installed open your vault client and perform the following commands
   ```
