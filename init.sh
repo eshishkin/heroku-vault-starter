@@ -22,6 +22,10 @@ do
     echo "Vault Server is running, but not yet initialized"
     VAULT_STARTED=1
     break
+  elif [ ${RESPONSE} -eq 503 ]; then
+    echo "Vault Server is running, but it is sealead"
+    VAULT_STARTED=1
+    break
   else
     echo "Sleeping..."
     sleep 5
